@@ -7,50 +7,37 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f4f4f4;
+    padding: 20px;
 }
 
-/* Container principal */
-.container {
+.catalogo {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    width: 70%;
+    gap: 20px;
 }
 
-/* Estilo de cada item (quadrado) */
-.item {
-    background: white;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+.produto {
     width: 150px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo da imagem */
-.item img {
+.produto img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
-/* Estilo do link */
-.item a {
+/* Link invisível, mas clicável */
+.produto a {
     display: block;
     margin-top: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #333;
-    transition: color 0.3s;
-}
-
-.item a:hover {
-    color: #007BFF;
+    height: 20px;
+    opacity: 0;
 }
